@@ -1,0 +1,11 @@
+/* Hero.js */
+.image {
+  z-index: -1;
+  filter: grayscale(100%);
+}
+
+.gradient {
+  z-index: -1;
+  background: var(--bg-gradient);
+}
+/* End of Hero.js */
