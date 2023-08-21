@@ -8,4 +8,9 @@
   z-index: -1;
   background: var(--bg-gradient);
 }
+
+.search {
+  background: var(--bg-gradient);
+  right: -1px;
+}
 /* End of Hero.js */
