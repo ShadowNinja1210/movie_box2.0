@@ -26,7 +26,7 @@ const Card = ({ title, date, id, genre, score, imgUrl }) => {
   }, []);
 
   return (
-    <div className=" w-40 rounded-md relative overflow-hidden ">
+    <div className="min-w-min w-40 rounded-md relative overflow-hidden ">
       {/* Top Part */}
       <div className=" relative overflow-hidden w-40 max-h-53 rounded-md cursor-pointer">
         {/* Poster Image */}

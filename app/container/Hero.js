@@ -22,7 +22,7 @@ const Hero = () => {
           type="text"
           placeholder="Type the movie in your mind here..."
           id="default-input"
-          className="z-10 mx-auto bg-gray-200 font-medium text-gray-900 text-sm rounded-full focus:ring-4 focus:ring-cyan-600 focus:border-cyan-800 block w-full p-3"
+          className="z-10 mx-auto bg-gray-200 font-medium text-gray-900 text-sm rounded-full focus:ring-2 focus:ring-cyan-600 focus:border-cyan-800 block w-full p-3"
         />
         <button className="search absolute flex top-0 py-2.5 px-9 text-md font-medium text-gray-100 rounded-full justify-end items-center gap-2">
           Search <BiSearchAlt2 className="text-2xl" />
