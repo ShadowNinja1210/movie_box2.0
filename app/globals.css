@@ -29,6 +29,10 @@
   border: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Scroll Bar */
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {

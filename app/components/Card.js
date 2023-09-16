@@ -4,7 +4,7 @@ import { BsFillBookmarkCheckFill, BsBookmarkPlus } from "react-icons/bs";
 import { useState, useRef, useEffect } from "react";
 import "./components.css";
 
-const Card = ({ title, date, id, genre, score, imgUrl }) => {
+const Card = ({ title, date, id, genre, score, imgUrl, padding }) => {
   const [openToggle, setOpenToggle] = useState(false);
   const [bookMarked, setBookMarked] = useState(false);
   const [favorite, setFavorite] = useState(false);
@@ -17,16 +17,18 @@ const Card = ({ title, date, id, genre, score, imgUrl }) => {
     const handleClickOutside = (event) => {
       if (divRef.current && !divRef.current.contains(event.target)) {
         setOpenToggle(false);
+        console.log("clicked outside");
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      console.log("removed");
     };
   }, []);
 
   return (
-    <div className="min-w-min w-40 rounded-md relative overflow-hidden ">
+    <div className={`min-w-min w-40 rounded-md relative overflow-hidden ${padding}`}>
       {/* Top Part */}
       <div className=" relative overflow-hidden w-40 max-h-53 rounded-md cursor-pointer">
         {/* Poster Image */}
@@ -40,7 +42,7 @@ const Card = ({ title, date, id, genre, score, imgUrl }) => {
       {/* Menu Options */}
       {!openToggle ? (
         <button className="absolute top-2 right-2" style={openToggle ? blur : undefined} onClick={() => setOpenToggle(true)}>
-          <PiDotsThreeCircleFill className="fill-gray-200 text-2xl opacity-70 hover:fill-cyan-500 focus:fill-cyan-500" />
+          <PiDotsThreeCircleFill className="fill-gray-200 text-2xl opacity-70 hover:fill-cyan-500 hover:opacity-100 focus:fill-cyan-500" />
         </button>
       ) : (
         <div ref={divRef} className="absolute font-semibold top-8 right-2 bg-gray-200 rounded-sm flex flex-col gap-1 p-2">

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="w-4/5 mx-auto h-72 relative overflow-hidden">
       {/* Image & Gradient Background */}
-      <img src="https://www.themoviedb.org/t/p/original/kxDCq0RbHwVzVHUkxDi67Xilrrx.jpg" className="absolute top-0 z-1 w-full object-cover image" />
+      <img alt="Hero.jpg" src="https://www.themoviedb.org/t/p/original/kxDCq0RbHwVzVHUkxDi67Xilrrx.jpg" className="absolute top-0 z-1 w-full object-cover image" />
       <div className="absolute top-0 z-0 w-full h-72 overflow-hidden opacity-80 gradient"></div>
 
       {/* Text */}

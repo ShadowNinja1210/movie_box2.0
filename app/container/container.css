@@ -16,5 +16,16 @@
 /* End of Hero.js */
 
 /* Trending.js */
-.carousel {
+.carousel::after {
+  content: "";
+  position: absolute;
+  opacity: var(--opacity);
+  width: 60px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  will-change: opacity;
 }
